@@ -13,26 +13,24 @@
 #   this function terminates the program with error code 78.
 # ==============================================================================
 relu:
-    # Prologue
-
-
+    addi t0, x0, 1   # if a1 < 1
+    blt a1, t0, error # jump to error branch
+        
+    addi t1, x0, 0    #the count
+    addi t0, a0, 0    #the address
 loop_start:
-    
-
-
-
-
-
-
-
+       beq a1, t1, loop_end
+       lw t2, 0(t0)  #load the current element
+       bge t2, x0 loop_continue
+       sw x0, 0(t0)
 loop_continue:
-
-
-
+    addi t1, t1, 1
+    addi t0, t0, 4
+    j loop_start
 loop_end:
-
-
-    # Epilogue
-
     
 	ret
+
+error:
+    li a1 78
+    jal exit2
