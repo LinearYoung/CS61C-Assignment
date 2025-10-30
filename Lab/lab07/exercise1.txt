@@ -1,19 +1,19 @@
 Scenario 1
-    1.
-    2.
-    3.
+    1.step size and cache size
+    2.0.0,because cache size only can hold one block,and every time different blocks hit the cache
+    3.a0 or a1
 
 Scenario 2
-    1.
-    2.
-    3.
+    1.2
+    2.MHHH
+    3.100.0,because cache size can hold the whole array
 
 Scenario 3
-    1.
-    2.
-    3.
-    4.
-    5.
+    1.50.0,0.0,50.0
+    2.32,16
+    3.16
+    4.a2,l2 is cold.
+    5.=,=,+,=
 
 --- lines below are ignored by the AG ---
 

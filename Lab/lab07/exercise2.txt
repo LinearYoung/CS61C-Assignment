@@ -1,5 +1,5 @@
-1.
-2.
+1.jki,kji,becasue i only jump 4bytes,but k j jump 4 * n bytes can't store in cache
+2.ikj kij
 
 --- lines below are ignored by the AG ---
 
